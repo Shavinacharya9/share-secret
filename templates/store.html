@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Store Secret Code and Data</h1>
+    <form method="post">
+        <label for="secret_code">Secret Code:</label><br>
+        <input type="password" id="secret_code" name="secret_code" required><br>
+        <label for="data">Data to Protect:</label><br>
+        <textarea id="data" name="data" required></textarea><br>
+        <button type="submit">Store</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
